@@ -10,16 +10,15 @@ interface StyleType {
 
 interface WheelData {
   id?: number;
-  options?: string;
+  option?: string;
   style?: StyleType;
 }
 
 export default function Home() {
   const [mustSpin, setMustSpun] = useState<boolean>(false);
   const [prizeNumber, setPrizeNumber] = useState<number>(0);
-  // const [init, setInit] = useState<boolean>(false);
 
-  const data: WheelData = [
+  const data: WheelData[] = [
     {
       id: 1,
       option: '냉면',

@@ -2,11 +2,13 @@
   "name": "roulette",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://bongjunk.github.io/food-roulette",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",
     "start": "next start",
-    "lint": "next lint"
+    "lint": "next lint",
+    "deploy": "NODE_ENV=production next build && next export && touch out/.nojekyll && git add -f out/ && git commit -m 'deploy to gh-pages' && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "@types/node": "20.3.1",

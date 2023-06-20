@@ -1,4 +1,7 @@
+import React from 'react';
 import './globals.css';
+import { RouletteProvider } from '../../context/context';
+import { prefix } from '../../config/config';
 
 export const metadata = {
   title: '점심메뉴 선정 룰렛',
@@ -11,8 +14,10 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en">
-      <body>{children}</body>
-    </html>
+    <RouletteProvider value={{ prefix }}>
+      <html lang="en">
+        <body>{children}</body>
+      </html>
+    </RouletteProvider>
   );
 }

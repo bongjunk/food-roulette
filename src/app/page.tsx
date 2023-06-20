@@ -105,6 +105,10 @@ export default function Home() {
   };
 
   useEffect(() => {
+    if (typeof window === 'undefined') return;
+  }, []);
+
+  useEffect(() => {
     setTimeout(() => {
       !mustSpin && prizeNumber
         ? alert(`추첨결과는 ${data[prizeNumber]?.option} 입니다!`)

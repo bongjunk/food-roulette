@@ -8,7 +8,7 @@ const nextConfig = {
   },
   reactStrictMode: true,
   output: isProd ? 'export' : 'standalone',
-  assetPrefix: isProd ? '/food-roulette' : '',
+  assetPrefix: isProd ? 'https://bongjunk.github.io/food-roulette' : '',
   trailingSlash: true,
 };
 

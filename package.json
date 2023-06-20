@@ -2,6 +2,7 @@
   "name": "roulette",
   "version": "0.1.0",
   "private": true,
+  "homepage": "http://bongjunk.github.io/food-roulette",
   "scripts": {
     "dev": "next dev",
     "build": "next build && next export",

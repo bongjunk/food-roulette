@@ -1,6 +1,6 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  basePath: '/https://github.com/bongjunk/food-roulette',
+  basePath: 'http://bongjunk.github.io/food-roulette',
 };
 
 module.exports = nextConfig;

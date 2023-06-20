@@ -1,5 +1,5 @@
 import React from 'react';
-import Page from './components/home';
+import Page from './roulette/home';
 
 const Home = () => {
   return (

@@ -7,8 +7,11 @@ const nextConfig = {
     appDir: true,
   },
   reactStrictMode: true,
-  output: isProd ? 'export' : 'standalone',
-  assetPrefix: isProd ? 'https://bongjunk.github.io/food-roulette' : '',
+  // output: isProd ? 'export' : 'standalone',
+  output: 'export',
+  basePath: '',
+  // assetPrefix: isProd ? 'https://bongjunk.github.io/food-roulette' : '',
+  assetPrefix: '/food-roulette',
   trailingSlash: true,
 };
 

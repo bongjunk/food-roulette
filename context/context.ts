@@ -1,8 +1,8 @@
 import React from 'react';
 
-const RouletteContext = React.createContext<any>(null);
+const ProjectContext = React.createContext<{ prefix: string }>({ prefix: '' });
 
-export const RouletteProvider = RouletteContext.Provider;
-export const RouletteConsumer = RouletteContext.Consumer;
+export const ProjectProvider = ProjectContext.Provider;
+export const ProjectConsumer = ProjectContext.Consumer;
 
-export default RouletteContext;
+export default ProjectContext;
